@@ -45,6 +45,7 @@ export default function Contact() {
 
       <form
         action={async (formData) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           const { data, error } = await sendEmail(formData);
 
           if (error) {

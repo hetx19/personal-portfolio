@@ -62,7 +62,7 @@ export const experiencesData = [
     title: "Building Projects",
     location: "Surat, India",
     description:
-      "I strated building project using all the technologies I have learned till now. ",
+      "I have begun working on a project that brings together all the technologies I’ve learned so far, allowing me to apply my skills in a practical and meaningful way.",
     icon: React.createElement(CgWorkAlt),
     date: "2025 - present",
   },

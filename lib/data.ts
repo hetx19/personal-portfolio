@@ -62,7 +62,7 @@ export const experiencesData = [
     title: "Building Projects",
     location: "Surat, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I strated building project using all the technologies I have learned till now. ",
     icon: React.createElement(CgWorkAlt),
     date: "2025 - present",
   },

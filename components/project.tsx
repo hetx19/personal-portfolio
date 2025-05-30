@@ -10,7 +10,13 @@ import { projectsData } from "@/lib/data";
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ id, title, tags, imageUrl }: ProjectProps) {
+export default function Project({
+  id,
+  title,
+  description,
+  tags,
+  imageUrl,
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -30,39 +36,33 @@ export default function Project({ id, title, tags, imageUrl }: ProjectProps) {
         }}
         className="group mb-3 sm:mb-8 last:mb-0"
       >
-        <section className="bg-gray-100 max-w-[64rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 m-4">
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-            <h3 className="text-2xl font-semibold">{title}</h3>
-            <div className="pt-8 pb-10 px-8 pl-16 sm:pr-6 sm:pt-14 sm:max-w-[55%] flex flex-row h-full sm:group-even:ml-[24rem]">
-              <ul className="flex flex-wrap mt-3 gap-1 sm:mt-auto">
-                {tags.map((tag, index) => (
-                  <li
-                    key={index}
-                    className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-500 px-4 py-2 text-sm uppercase tracking-widest text-white rounded-full shadow-md hover:brightness-110 transition dark:from-purple-400 dark:via-pink-400 dark:to-red-400"
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
+        <section className="relative bg-gradient-to-br from-gray-100 to-gray-200 dark:from-white/10 dark:to-white/20 border border-black/5 rounded-2xl overflow-hidden shadow-2xl sm:pr-16 sm:h-[26rem] group hover:shadow-[0_15px_60px_rgba(0,0,0,0.2)] transition-all duration-500 w-full max-w-screen-xl xl:pr-24 pl-4 my-10 backdrop-blur-sm">
+          <div className="pt-10 pb-12 sm:pt-16 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[28rem]">
+            <h3 className="text-4xl font-extrabold text-gray-800 dark:text-white mb-6 tracking-tight leading-snug">
+              {title}
+            </h3>
+
+            <p className="text-base text-gray-700 dark:text-gray-300 mb-6">
+              {description}
+            </p>
+
+            <div className="flex flex-wrap gap-3 mt-auto">
+              {tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-500 text-white text-xs font-medium px-4 py-1.5 rounded-full shadow-md hover:brightness-110 transition-transform duration-300 transform hover:scale-105 dark:from-purple-400 dark:via-pink-400 dark:to-red-400"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
 
           <Image
             src={imageUrl}
-            alt="Project I worked on"
+            alt="Project Image"
             quality={95}
-            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-          transition 
-          group-hover:scale-[1.04]
-          group-hover:-translate-x-3
-          group-hover:translate-y-3
-          group-hover:-rotate-2
-          
-          group-even:group-hover:translate-x-3
-          group-even:group-hover:translate-y-3
-          group-even:group-hover:rotate-2
-          
-          group-even:right-[initial] group-even:-left-40"
+            className="absolute hidden sm:block top-10 -right-56 w-[34rem] rounded-xl shadow-2xl transition-all duration-500 group-hover:scale-[1.07] group-hover:-translate-x-4 group-hover:translate-y-4 group-hover:-rotate-2 group-even:group-hover:translate-x-4 group-even:group-hover:translate-y-4 group-even:group-hover:rotate-2 group-even:right-auto group-even:-left-56"
           />
         </section>
       </motion.div>

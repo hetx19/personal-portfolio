@@ -3,6 +3,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import { FaReact } from "react-icons/fa";
 import { CgWorkAlt } from "react-icons/cg";
 import pokeddexImg from "@/public/pokedex.png";
+import ExpenseTrackingAppImg from "@/public/Expense-Tracking-App.png";
 
 export const links = [
   {
@@ -67,6 +68,15 @@ export const projectsData = [
     tags: ["React", "Saas", "Redux", "Firebase"],
     imageUrl: pokeddexImg,
     link: "https://pokedex-harshal-savaliya.netlify.app/",
+  },
+  {
+    id: 2,
+    title: "MERN Stack: Expense Tracking App",
+    description:
+      "The MERN Expense Tracker Website is a responsive web application built with MongoDB, Express.js, React.js, and Node.js, designed for performance and scalability. Styled with Tailwind CSS, it features custom email/password authentication, allowing secure user access. Users can track income and expenses with interactive Recharts graphs and personalize entries using React Emoji Picker. The app also includes the ability to export financial data as Excel sheets for offline use. With a clean, modular architecture and modern tech stack, the platform offers a user-friendly and maintainable solution for personal finance tracking.",
+    tags: ["React", "Tailwind", "MongoDB", "Express"],
+    imageUrl: ExpenseTrackingAppImg,
+    link: "https://expense-tracking-app-harshal.vercel.app/",
   },
 ] as const;
 

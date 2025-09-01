@@ -23,26 +23,41 @@ export default function About() {
     >
       <Heading>About Me</Heading>
       <p className="mb-3">
-        During my class <span className="font-medium">VI</span> I got fasinated
-        about <span className="font-medium">Coding And How Website Works</span>,
-        This led me to learn programming. After my class{" "}
-        <span className="font-medium">VI</span> I started learning{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is to
-        build projects. My core stack is{" "}
-        <span className="font-medium underline">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. Currently I am a student in Class{" "}
-        <span className="font-medium">XII</span>
+        My journey in tech began back in class{" "}
+        <span className="font-medium">VI</span>, when I became fascinated by{" "}
+        <span className="font-medium">How Website Works</span>, That curiosity
+        sparked a passion for coding and led me to dive into full-stack web
+        development soon after.
       </p>
 
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        playing video games, watching movies, and sitting in nature. I also
-        enjoy <span className="font-medium">learning new things</span>. I am
-        currently learning about{" "}
+        Now, I&apos;m a first-year B.Tech CSE student at{" "}
+        <span className="font-bold underline">IIIT Kottayam</span>, and I love
+        building real-world projects that bring ideas to life. My core tech
+        stack includes{" "}
+        <span className="font-bold underline">
+          React, Next.js, Node.js, and MongoDB
+        </span>
+        , and I&apos;m also familiar with{" "}
+        <span className="font-bold underline">TypeScript and Prisma</span>.
+        I&apos;m always eager to explore and learn new technologies to sharpen
+        my skills.
+      </p>
+
+      <p>
+        Currently, I&apos;m also learning{" "}
+        <span className="font-medium underline">
+          Data Structures and Algorithms (DSA)
+        </span>{" "}
+        to strengthen my problem solving abilities.
+      </p>
+
+      <p>
+        <span className="italic">When I&apos;m not coding</span>, you&apos;ll
+        find me playing video games, watching movies, or enjoying some quiet
+        time in nature.. I also enjoy{" "}
+        <span className="font-medium">learning new things</span>. I am currently
+        learning about{" "}
         <span className="font-medium underline">
           Data Structure And Algorithm(DSA)
         </span>
